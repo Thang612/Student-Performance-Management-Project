@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="content" value=""/>
+    </definition>
+    <definition name="hoatdongs" extends="baseLayout">
+        <put-attribute name="title" value="Trang hoạt động" />
+        <put-attribute name="content" value="/WEB-INF/pages/hoatdongs.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ quản trị" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content" value="/WEB-INF/pages/stats.jsp" />
+    </definition>
+    <definition name="chitietsinhvien" extends="baseLayout">
+        <put-attribute name="title" value="Chi Tiết Sinh Viên" />
+        <put-attribute name="content" value="/WEB-INF/pages/chitietsinhvien.jsp" />
+    </definition>
+    <definition name="troly" extends="baseLayout">
+        <put-attribute name="title" value="Trợ Lý Sinh Viên" />
+        <put-attribute name="content" value="/WEB-INF/pages/troly.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Nhập Admin" />
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    <definition name="napdiem" extends="baseLayout">
+        <put-attribute name="title" value="Nạp điểm" />
+        <put-attribute name="content" value="/WEB-INF/pages/napdiem.jsp" />
+    </definition>
+    <definition name="baiviet" extends="baseLayout">
+        <put-attribute name="title" value="Bài Viết" />
+        <put-attribute name="content" value="/WEB-INF/pages/baiviet.jsp" />
+    </definition>
+    <definition name="baiviets" extends="baseLayout">
+        <put-attribute name="title" value="Bảng tin" />
+        <put-attribute name="content" value="/WEB-INF/pages/baiviets.jsp" />
+    </definition>
+    <definition name="baothieu" extends="baseLayout">
+        <put-attribute name="title" value="Báo thiếu" />
+        <put-attribute name="content" value="/WEB-INF/pages/baothieu.jsp" />
+    </definition>
+    <definition name="statsbyall" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê theo toàn trường" />
+        <put-attribute name="content" value="/WEB-INF/pages/statsbyall.jsp" />
+    </definition>
+    <definition name="statsbyfaculty" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê theo toàn khoa" />
+        <put-attribute name="content" value="/WEB-INF/pages/statsbyfaculty.jsp" />
+    </definition>
+    <definition name="statsbyclass" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê theo lớp" />
+        <put-attribute name="content" value="/WEB-INF/pages/statsbyclass.jsp" />
+    </definition>    
+</tiles-definitions>
+
+
